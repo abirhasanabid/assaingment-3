@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- font awasome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +22,11 @@
             theme: {
                 extend: {
                     colors: {
-                        clifford: '#da373d',
+                        'h-color': '#212121',
+                        'p-color': '#494949',
+                        'primary-color': '#737373',
+                        'btn-bg-1': '#ABEF5F',
+                        'btn-bg-2': 'rgba(171, 239, 95, 0.5)',
                     }
 
                 }
@@ -33,10 +41,42 @@
     </style>
 </head>
 
-<body>
+<body class="manrope">
     <!-- header -->
     <header>
-
+        <!-- navber -->
+        <nav class="md:container mx-auto my-10 md:my-14">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <i
+                        class="fa-solid fa-arrow-right -rotate-45 bg-btn-bg-1 w-8 h-8 grid place-items-center rounded-full"></i>
+                    <a class="btn btn-ghost h-color font-extrabold text-2xl md:text-3xl">Rinterio</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li class="font-extrabold p-color "><a>Home</a></li>
+                        <li><a>Services</a></li>
+                        <li><a>Protfolio</a></li>
+                        <li><a>Blogs</a></li>
+                        <li><a>Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end gap-5">
+                    <div class="md:flex items-center gap-6 hidden">
+                        <i
+                            class="fa-solid fa-magnifying-glass text-primary-color bg-[#E9E9E9] w-10 h-10 rounded-full grid place-items-center"></i>
+                        <i class="fa-solid fa-cart-shopping text-primary-color bg-[#E9E9E9] w-10 h-10 rounded-full grid place-items-center"></i>
+                    </div>
+                    <div class="hidden md:block">
+                        <a class="btn bg-btn-bg-1 rounded-[32px] text-h-color font-extrabold">Book Consult<i
+                                class="fa-solid fa-arrow-right -rotate-45 bg-black text-white w-8 h-8 grid place-items-center rounded-full"></i></a>
+                    </div>
+                    <div class="">
+                        <i class="fa-solid fa-bars lg:hidden text-primary-color bg-[#E9E9E9] w-10 h-10 rounded-full grid place-items-center"></i>
+                    </div>
+                </div>
+            </div>
+        </nav>
     </header>
     <!-- main -->
     <main>
